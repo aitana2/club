@@ -5,8 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class pistas extends Model
+class Courts extends Model
 {
     use HasFactory;
-    protected $fillable =['deporte', 'reserva'];
+    protected $fillable =['sports', 'book'];
 }

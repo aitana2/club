@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 
 
-class usuariosController extends Controller{
+class UsersController extends Controller{
 
     // public function users(Request $request){
     //     $users = User::all();

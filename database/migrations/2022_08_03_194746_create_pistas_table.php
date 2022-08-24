@@ -13,10 +13,11 @@ class CreatePistasTable extends Migration
      */
     public function up()
     {
-        Schema::create('pistas', function (Blueprint $table) {
+        Schema::create('courts', function (Blueprint $table) {
             $table->id();
-            $table->integer('deporte');
-            $table->integer('reserva');
+            $table->integer('sport');
+            $table->integer('book');
+            $table->foreign('sport')->references('id')->on('sport');
             $table->timestamps();
         });
     }

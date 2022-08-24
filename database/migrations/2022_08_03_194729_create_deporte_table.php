@@ -13,9 +13,9 @@ class CreateDeporteTable extends Migration
      */
     public function up()
     {
-        Schema::create('deporte', function (Blueprint $table) {
+        Schema::create('sport', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre');
+            $table->string('name');
             $table->timestamps();
         });
     }

@@ -13,13 +13,14 @@ class CreateReservasTable extends Migration
      */
     public function up()
     {
-        Schema::create('reservas', function (Blueprint $table) {
+        Schema::create('book', function (Blueprint $table) {
             $table->id();
             $table->integer('socioid');
-            $table->integer('pistaid');
-            $table->date('fecha');
-            $table->datetime('hora_inicio');
-            $table->datetime('hora_fin');
+            $table->integer('courtid');
+            $table->date('date');
+            $table->datetime('start_time');
+            $table->datetime('finish_time');
+            $table->foreign('courtid')->references('id')->on('courts');
             $table->timestamps();
         });
     }

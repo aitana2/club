@@ -3,12 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\pistas;
+use App\Models\Courts;
 
-class pistasController extends Controller
+class CourtssController extends Controller
 {
     /**
-     * Lista de pistas.
+     * List of courts.
      *
      * @return \Illuminate\Http\Response
      */
@@ -19,7 +19,7 @@ class pistasController extends Controller
     }
 
     /**
-     * Nueva pista.
+     * New court.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -34,7 +34,7 @@ class pistasController extends Controller
         return response()->json($pista);
     }
     /**
-     * Mostrar pista por deporte.
+     * Show court.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -65,7 +65,7 @@ class pistasController extends Controller
     }
 
     /**
-     * Eliminar reserva
+     * Delete court
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response

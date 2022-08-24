@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\reservas;
+use App\Models\Book;
 
 
-class reservasController extends Controller
+class BookController extends Controller
 {
     /**
-     * Lista de reservas.
+     * Lista of bookings.
      *
      * @return \Illuminate\Http\Response
      */
@@ -20,7 +20,7 @@ class reservasController extends Controller
     }
 
     /**
-     * Nueva Reserva.
+     * New book.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response

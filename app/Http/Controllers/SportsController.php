@@ -3,12 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\deporte;
+use App\Models\sports;
 
 class deporteController extends Controller
 {
     /**
-     * Lista de deportes.
+     * Lis of sports.
      *
      * @return \Illuminate\Http\Response
      */
@@ -19,7 +19,7 @@ class deporteController extends Controller
     }
 
     /**
-     * Nuevo deporte.
+     * New sport.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -35,7 +35,7 @@ class deporteController extends Controller
     
 
     /**
-     * Eliminar deporte
+     * Delete sport
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response

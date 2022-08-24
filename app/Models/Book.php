@@ -5,8 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class reservas extends Model
+class Reservas extends Model
 {
     use HasFactory;
-    protected $fillable =['socioid', 'pistaid', 'fecha', 'hora_inicio', 'hora_fin'];
+    protected $fillable =['socioid', 'courtid', 'date', 'satart_time', 'finish_time'];
 }
